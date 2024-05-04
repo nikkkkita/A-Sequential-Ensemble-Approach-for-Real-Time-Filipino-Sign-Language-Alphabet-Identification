@@ -716,7 +716,7 @@ class App(customtkinter.CTk):
                 print("Final Prediction by KNN+RF Model:", final_label)
 
 
-                if hand_sign_id == 2:  # Point gesture
+                if hand_sign_id == "none":  # Point gesture
                     self.point_history.append(landmark_list[8])
                 else:
                     self.point_history.append([0, 0])
